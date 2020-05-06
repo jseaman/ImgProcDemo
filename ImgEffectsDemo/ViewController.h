@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *colorModeSegment;
+@property (weak, nonatomic) IBOutlet UISlider *gammaSlider;
+
+- (IBAction)onColorModeChange:(id)sender;
+- (IBAction)onGammaSliderChange:(id)sender;
+
 
 @end
 

@@ -13,6 +13,19 @@
 		D897394A1CF9207A005B098A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89739481CF9207A005B098A /* Main.storyboard */; };
 		D897394C1CF9207A005B098A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D897394B1CF9207A005B098A /* Assets.xcassets */; };
 		D897394F1CF9207A005B098A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D897394D1CF9207A005B098A /* LaunchScreen.storyboard */; };
+		D89739581CF9258D005B098A /* Pixel.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739571CF9258D005B098A /* Pixel.m */; };
+		D897395D1CF926F8005B098A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897395C1CF926F8005B098A /* UIKit.framework */; };
+		D897395F1CF92706005B098A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D897395E1CF92706005B098A /* CoreGraphics.framework */; };
+		D89739611CF9270E005B098A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89739601CF9270E005B098A /* Foundation.framework */; };
+		D89739641CF92794005B098A /* SpecialEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739631CF92794005B098A /* SpecialEffect.m */; };
+		D89739671CF929FF005B098A /* DemoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739661CF929FF005B098A /* DemoEffect.m */; };
+		D897396C1CF9481E005B098A /* MBEImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D897396B1CF9481E005B098A /* MBEImageFilter.m */; };
+		D89739711CF948D1005B098A /* MBEContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739701CF948D1005B098A /* MBEContext.m */; };
+		D89739731CF94966005B098A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D89739721CF94966005B098A /* Shaders.metal */; };
+		D89739761CF949B7005B098A /* MBEPaletteMatcherFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739751CF949B7005B098A /* MBEPaletteMatcherFilter.m */; };
+		D89739791CF94B65005B098A /* MBEMainBundleTextureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D89739781CF94B65005B098A /* MBEMainBundleTextureProvider.m */; };
+		D897397C1CF94F5E005B098A /* UIImage+MBETextureUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D897397B1CF94F5E005B098A /* UIImage+MBETextureUtilities.m */; };
+		D897397F1CF954E6005B098A /* MBEColorModeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D897397E1CF954E6005B098A /* MBEColorModeFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,30 @@
 		D897394B1CF9207A005B098A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D897394E1CF9207A005B098A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D89739501CF9207A005B098A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89739561CF9258D005B098A /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pixel.h; sourceTree = "<group>"; };
+		D89739571CF9258D005B098A /* Pixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pixel.m; sourceTree = "<group>"; };
+		D897395C1CF926F8005B098A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D897395E1CF92706005B098A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D89739601CF9270E005B098A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D89739621CF92794005B098A /* SpecialEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialEffect.h; sourceTree = "<group>"; };
+		D89739631CF92794005B098A /* SpecialEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialEffect.m; sourceTree = "<group>"; };
+		D89739651CF929FF005B098A /* DemoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoEffect.h; sourceTree = "<group>"; };
+		D89739661CF929FF005B098A /* DemoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoEffect.m; sourceTree = "<group>"; };
+		D897396A1CF9481E005B098A /* MBEImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEImageFilter.h; sourceTree = "<group>"; };
+		D897396B1CF9481E005B098A /* MBEImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEImageFilter.m; sourceTree = "<group>"; };
+		D897396D1CF94874005B098A /* MBETextureProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBETextureProvider.h; sourceTree = "<group>"; };
+		D897396E1CF948A5005B098A /* MBETextureConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBETextureConsumer.h; sourceTree = "<group>"; };
+		D897396F1CF948D1005B098A /* MBEContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEContext.h; sourceTree = "<group>"; };
+		D89739701CF948D1005B098A /* MBEContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEContext.m; sourceTree = "<group>"; };
+		D89739721CF94966005B098A /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D89739741CF949B7005B098A /* MBEPaletteMatcherFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEPaletteMatcherFilter.h; sourceTree = "<group>"; };
+		D89739751CF949B7005B098A /* MBEPaletteMatcherFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEPaletteMatcherFilter.m; sourceTree = "<group>"; };
+		D89739771CF94B65005B098A /* MBEMainBundleTextureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEMainBundleTextureProvider.h; sourceTree = "<group>"; };
+		D89739781CF94B65005B098A /* MBEMainBundleTextureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEMainBundleTextureProvider.m; sourceTree = "<group>"; };
+		D897397A1CF94F5E005B098A /* UIImage+MBETextureUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MBETextureUtilities.h"; sourceTree = "<group>"; };
+		D897397B1CF94F5E005B098A /* UIImage+MBETextureUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MBETextureUtilities.m"; sourceTree = "<group>"; };
+		D897397D1CF954E6005B098A /* MBEColorModeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBEColorModeFilter.h; sourceTree = "<group>"; };
+		D897397E1CF954E6005B098A /* MBEColorModeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBEColorModeFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89739611CF9270E005B098A /* Foundation.framework in Frameworks */,
+				D897395F1CF92706005B098A /* CoreGraphics.framework in Frameworks */,
+				D897395D1CF926F8005B098A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +82,9 @@
 		D89739331CF9207A005B098A = {
 			isa = PBXGroup;
 			children = (
+				D89739601CF9270E005B098A /* Foundation.framework */,
+				D897395E1CF92706005B098A /* CoreGraphics.framework */,
+				D897395C1CF926F8005B098A /* UIKit.framework */,
 				D897393E1CF9207A005B098A /* ImgEffectsDemo */,
 				D897393D1CF9207A005B098A /* Products */,
 			);
@@ -58,6 +101,8 @@
 		D897393E1CF9207A005B098A /* ImgEffectsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D89739681CF947CC005B098A /* Metal Image Processing */,
+				D89739691CF947E2005B098A /* Metal Filters */,
 				D89739421CF9207A005B098A /* AppDelegate.h */,
 				D89739431CF9207A005B098A /* AppDelegate.m */,
 				D89739451CF9207A005B098A /* ViewController.h */,
@@ -65,8 +110,14 @@
 				D89739481CF9207A005B098A /* Main.storyboard */,
 				D897394B1CF9207A005B098A /* Assets.xcassets */,
 				D897394D1CF9207A005B098A /* LaunchScreen.storyboard */,
+				D89739561CF9258D005B098A /* Pixel.h */,
+				D89739571CF9258D005B098A /* Pixel.m */,
 				D89739501CF9207A005B098A /* Info.plist */,
 				D897393F1CF9207A005B098A /* Supporting Files */,
+				D89739621CF92794005B098A /* SpecialEffect.h */,
+				D89739631CF92794005B098A /* SpecialEffect.m */,
+				D89739651CF929FF005B098A /* DemoEffect.h */,
+				D89739661CF929FF005B098A /* DemoEffect.m */,
 			);
 			path = ImgEffectsDemo;
 			sourceTree = "<group>";
@@ -77,6 +128,35 @@
 				D89739401CF9207A005B098A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D89739681CF947CC005B098A /* Metal Image Processing */ = {
+			isa = PBXGroup;
+			children = (
+				D897396D1CF94874005B098A /* MBETextureProvider.h */,
+				D897396E1CF948A5005B098A /* MBETextureConsumer.h */,
+				D897396F1CF948D1005B098A /* MBEContext.h */,
+				D89739701CF948D1005B098A /* MBEContext.m */,
+				D89739771CF94B65005B098A /* MBEMainBundleTextureProvider.h */,
+				D89739781CF94B65005B098A /* MBEMainBundleTextureProvider.m */,
+				D897397A1CF94F5E005B098A /* UIImage+MBETextureUtilities.h */,
+				D897397B1CF94F5E005B098A /* UIImage+MBETextureUtilities.m */,
+			);
+			name = "Metal Image Processing";
+			sourceTree = "<group>";
+		};
+		D89739691CF947E2005B098A /* Metal Filters */ = {
+			isa = PBXGroup;
+			children = (
+				D897396A1CF9481E005B098A /* MBEImageFilter.h */,
+				D897396B1CF9481E005B098A /* MBEImageFilter.m */,
+				D89739721CF94966005B098A /* Shaders.metal */,
+				D89739741CF949B7005B098A /* MBEPaletteMatcherFilter.h */,
+				D89739751CF949B7005B098A /* MBEPaletteMatcherFilter.m */,
+				D897397D1CF954E6005B098A /* MBEColorModeFilter.h */,
+				D897397E1CF954E6005B098A /* MBEColorModeFilter.m */,
+			);
+			name = "Metal Filters";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +190,7 @@
 				TargetAttributes = {
 					D897393B1CF9207A005B098A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = J4AY22LB45;
 					};
 				};
 			};
@@ -118,6 +199,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -149,8 +231,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89739711CF948D1005B098A /* MBEContext.m in Sources */,
+				D897397C1CF94F5E005B098A /* UIImage+MBETextureUtilities.m in Sources */,
+				D89739581CF9258D005B098A /* Pixel.m in Sources */,
+				D89739671CF929FF005B098A /* DemoEffect.m in Sources */,
 				D89739471CF9207A005B098A /* ViewController.m in Sources */,
+				D89739641CF92794005B098A /* SpecialEffect.m in Sources */,
+				D897396C1CF9481E005B098A /* MBEImageFilter.m in Sources */,
+				D89739791CF94B65005B098A /* MBEMainBundleTextureProvider.m in Sources */,
+				D89739731CF94966005B098A /* Shaders.metal in Sources */,
+				D89739761CF949B7005B098A /* MBEPaletteMatcherFilter.m in Sources */,
 				D89739441CF9207A005B098A /* AppDelegate.m in Sources */,
+				D897397F1CF954E6005B098A /* MBEColorModeFilter.m in Sources */,
 				D89739411CF9207A005B098A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +357,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = J4AY22LB45;
 				INFOPLIST_FILE = ImgEffectsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squadvenure.ImgEffectsDemo;
@@ -276,6 +370,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = J4AY22LB45;
 				INFOPLIST_FILE = ImgEffectsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squadvenure.ImgEffectsDemo;
@@ -302,6 +398,7 @@
 				D89739551CF9207A005B098A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
