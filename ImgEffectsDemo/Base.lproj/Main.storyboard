@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,24 +19,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-2J-TVZ">
-                                <rect key="frame" x="0.0" y="20" width="600" height="503"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-2J-TVZ">
+                                <rect key="frame" x="-4" y="5" width="383" height="523"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="523" id="XZj-br-HzV"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="UTk-QW-r29">
-                                <rect key="frame" x="129" y="576" width="342" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="UTk-QW-r29">
+                                <rect key="frame" x="71" y="597.5" width="282" height="31"/>
                                 <connections>
                                     <action selector="onGammaSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Bwk-DL-xyV"/>
                                 </connections>
                             </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-dy-iqa">
-                                <rect key="frame" x="20" y="542" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xEQ-86-rsV">
-                                <rect key="frame" x="131" y="531" width="338" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xEQ-86-rsV">
+                                <rect key="frame" x="-1" y="550" width="377" height="32"/>
                                 <segments>
                                     <segment title="NONE"/>
                                     <segment title="RED"/>
@@ -51,13 +45,21 @@
                                     <action selector="onColorModeChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="qlD-QU-c4F"/>
                                 </connections>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-dy-iqa">
+                                <rect key="frame" x="16" y="597" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="UTk-QW-r29" secondAttribute="trailing" constant="8" id="0QT-lK-rwL"/>
                             <constraint firstItem="mVs-2J-TVZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="1iK-x6-E1P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mVs-2J-TVZ" secondAttribute="trailing" constant="-20" id="1oX-sa-AD2"/>
+                            <constraint firstItem="UTk-QW-r29" firstAttribute="centerY" secondItem="p3x-dy-iqa" secondAttribute="centerY" id="4wv-J1-rgi"/>
+                            <constraint firstItem="p3x-dy-iqa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="D1A-M9-iZu"/>
+                            <constraint firstItem="xEQ-86-rsV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GqV-Cu-f6m"/>
+                            <constraint firstItem="UTk-QW-r29" firstAttribute="leading" secondItem="p3x-dy-iqa" secondAttribute="trailing" constant="8" id="LTd-ng-hgm"/>
                             <constraint firstItem="xEQ-86-rsV" firstAttribute="top" secondItem="mVs-2J-TVZ" secondAttribute="bottom" constant="22" id="M6f-AK-YC3"/>
-                            <constraint firstItem="UTk-QW-r29" firstAttribute="top" secondItem="xEQ-86-rsV" secondAttribute="bottom" constant="3" id="qVs-tE-LLE"/>
+                            <constraint firstItem="p3x-dy-iqa" firstAttribute="top" secondItem="xEQ-86-rsV" secondAttribute="bottom" constant="16" id="V9c-LS-Bh4"/>
                             <constraint firstItem="mVs-2J-TVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="v9j-BV-EJT"/>
                         </constraints>
                     </view>
